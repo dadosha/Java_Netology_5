@@ -9,8 +9,7 @@ public class Vacation {
             if (haveMoney < threshold) {
                 System.out.println("Месяц " + month + ". Денег " + haveMoney + ". Придётся работать. Заработал +" + income + ", потратил -" + expenses);
                 haveMoney = haveMoney + income - expenses;
-            }
-            else {
+            } else {
                 System.out.println("Месяц " + month + ". Денег " + haveMoney + ". Буду отдыхать. Потратил -" + expenses + ", затем ещё -" + ((haveMoney - expenses) / 3) * 2);
                 haveMoney = (haveMoney - expenses) / 3;
                 monthCount++;
